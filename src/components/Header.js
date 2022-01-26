@@ -13,33 +13,19 @@ const Header = ({ history, dimensions }) => {
     const checkMenuState = () => {
         if(menuState.menuOpened === false ) {
             setMenuState({ menuOpened: true});
-        } else {
-            setMenuState({ menuOpened: false});
-        }
-    }    
-
-    useEffect(() => {
-
-        history.listen(() => {
-            setMenuState({ menuOpened: false});
-        })
-
-        if(menuState.menuOpened === true ) {
-            gsap.to("nav", {
+            tl.to("nav", {
                 css: { display: "block"},
-                ease: "power4.out"
-            });
-            gsap.to("body", { 
+                duration: 0
+            }).to("body", { 
                 css: { overflow: "hidden"},
-                ease: "power4.out"
-            });
-
-            tl.to(".App", {
+                duration: 0
+            }).to(".App", {
                 duration: 1,
                 y: dimensions.width >= '768' ? dimensions.height / 2 : "70vh",
                 ease: "power4.out"
             })
         } else {
+            setMenuState({ menuOpened: false});
             tl.to(".App", {
                 duration: 1,
                 y: 0,
@@ -51,6 +37,19 @@ const Header = ({ history, dimensions }) => {
                 css: { overflow: "auto"},
                 ease: "power4.out"
             })
+        }
+    }    
+
+    useEffect(() => {
+
+        history.listen(() => {
+            setMenuState({ menuOpened: false});
+        })
+
+        if(menuState.menuOpened === true ) {
+            
+        } else {
+            
         }
         
     },[menuState.menuOpened])
