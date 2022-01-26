@@ -13,30 +13,8 @@ const Header = ({ history, dimensions }) => {
     const checkMenuState = () => {
         if(menuState.menuOpened === false ) {
             setMenuState({ menuOpened: true});
-            tl.to("nav", {
-                css: { display: "block"},
-                duration: 0
-            }).to("body", { 
-                css: { overflow: "hidden"},
-                duration: 0
-            }).to(".App", {
-                duration: 1,
-                y: dimensions.width >= '768' ? dimensions.height / 2 : "70vh",
-                ease: "power4.out"
-            })
         } else {
             setMenuState({ menuOpened: false});
-            tl.to(".App", {
-                duration: 1,
-                y: 0,
-                ease: "power4.out"
-            }).to("nav", {
-                css: { display: "none"},
-                ease: "power4.out"
-            }).to("body", { 
-                css: { overflow: "auto"},
-                ease: "power4.out"
-            })
         }
     }    
 
@@ -47,9 +25,28 @@ const Header = ({ history, dimensions }) => {
         })
 
         if(menuState.menuOpened === true ) {
-            
+            gsap.to("nav", {
+                css: { display: "block"},
+            });
+            gsap.to("body", { 
+                css: { overflow: "hidden"},
+            });
+
+            tl.to(".App", {
+                duration: 1,
+                y: dimensions.width >= '768' ? dimensions.height / 2 : "70vh",
+                ease: "power4.out"
+            })
         } else {
-            
+            tl.to(".App", {
+                duration: 1,
+                y: 0,
+                ease: "power4.out"
+            }).to("nav", {
+                css: { display: "none"},
+            }).to("body", { 
+                css: { overflow: "auto"},
+            })
         }
         
     },[menuState.menuOpened])

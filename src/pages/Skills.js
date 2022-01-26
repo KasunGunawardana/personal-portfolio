@@ -32,7 +32,7 @@ const Skills = () => {
                 <SkillProgressBar skill="Alpine.js" level={7} />
               </div>
               <div className="customized-column col-lg-4 col-sm-6 col-xs-12">
-                <SkillProgressBar skill="React" level={7} />
+                <SkillProgressBar skill="React" level={8} />
               </div>
               <div className="customized-column col-lg-4 col-sm-6 col-xs-12">
                 <SkillProgressBar skill="Node.js" level={7} />
