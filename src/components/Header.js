@@ -27,11 +27,9 @@ const Header = ({ history, dimensions }) => {
         if(menuState.menuOpened === true ) {
             gsap.to("nav", {
                 css: { display: "block"},
-                ease: "power4.out"
             });
             gsap.to("body", { 
                 css: { overflow: "hidden"},
-                ease: "power4.out"
             });
 
             tl.to(".App", {
@@ -46,10 +44,8 @@ const Header = ({ history, dimensions }) => {
                 ease: "power4.out"
             }).to("nav", {
                 css: { display: "none"},
-                ease: "power4.out"
             }).to("body", { 
                 css: { overflow: "auto"},
-                ease: "power4.out"
             })
         }
         

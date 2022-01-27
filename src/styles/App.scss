@@ -24,6 +24,11 @@ body {
   position: relative;
 }
 
+::selection {
+  color: #fff;
+  background: #ee1b26;
+}
+
 .container {
   width: 1560px;
   min-width: 1560px;
@@ -231,15 +236,21 @@ body {
 // main - home
 
 .main {
-  height: 100vh;
+  // height: 100vh;
   // height: calc(var(--vh, 1vh) * 50);
   background-color: $white;
+  @include media(">=desktop") {
+    height: 100vh;
+  }
   @include media("<=tablet") {
   }
   .row {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    box-sizing: border-box;
+    padding-top: 120px;
+    padding-bottom: 50px;
     h2 {
       font-size: 3rem;
       line-height: 4.2rem;
@@ -767,6 +778,23 @@ nav {
   }
 }
 
+#footerInfo {
+  margin-top: 50px;
+  @include media(">desktop") {
+    margin-top: 180px;
+  }
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    line-height: initial;
+    user-select: text;
+    span {
+      color: rgb(184, 184, 184);
+    }
+  }
+}
+
 .customized-row {
   display: flex;
   flex-direction: row;
@@ -789,9 +817,69 @@ nav {
         width: 46.8%;
       }
     }
+    &.col-sm-12 {
+      @include media("<=desktop", ">=phone") {
+        width: 100%;
+      }
+    }
     &.col-xs-12 {
       @include media("<=phone") {
         width: 100%;
+      }
+    }
+    h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.7rem;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        display: inline-block;
+        margin-right: 15px;
+        @include media("<=tablet") {
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+        }
+        @include media("<=phone") {
+          margin-bottom: 0.875rem;
+          font-size: 1rem;
+        }
+        a {
+          font-size: 0.9rem;
+          text-decoration: none;
+          color: $black;
+          display: inline-block;
+          position: relative;
+          &.icons {
+            font-size: 1.4rem;
+            transition: 0.5s;
+            &:hover {
+              color: rgb(85, 85, 85);
+            }
+            &::after {
+              content: none;
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: 0;
+            background-color: $black;
+            right: 0;
+            transition: 0.5s;
+          }
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
+        }
       }
     }
   }
