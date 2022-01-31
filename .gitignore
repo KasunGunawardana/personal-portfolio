@@ -25,3 +25,4 @@ yarn-error.log*
 # igonring the backup zip files
 kasungunawardana.online.zip
 kasungunawardana.online#1.zip
+/backup

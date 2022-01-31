@@ -1,12 +1,17 @@
 import React from 'react'
 import SkillProgressBar from '../components/sub/SkillProgressBar'
+import { motion } from 'framer-motion'
 
 const Skills = () => {
 	return (
 	<div className='page'>
       <div className='container'>
         <div className='row'>
-          <div style={{ width: '100%'}}>
+          <motion.div
+          initial={{ opacity:0 }} 
+          animate={{ opacity:1 }} 
+          transition={{ duration: 1 }}
+          style={{ width: '100%'}}>
             <h1>Professional Skills</h1>
             <h3>Programming</h3>
             <div className="customized-row">
@@ -62,7 +67,7 @@ const Skills = () => {
                 <SkillProgressBar skill="Figma" level={5} />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
