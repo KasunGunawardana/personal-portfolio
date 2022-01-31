@@ -24,16 +24,6 @@ const works = [
   },
   {
     id: 2,
-    name: 'tpl.lk',
-    description: 'Trade Promoters Limited (TPL) is Sri Lanka & Maldives\'s sole authorized distributor for Cummins Inc. (diesel generators & engines for marine, construction & industrial applications), & Sri Lanka\'s authorized distributor for Schindler (elevators & escalators).',
-    url: 'https://tpl.lk//',
-    repo: null,
-    tags:  ['#php, #wordpress_cms'],
-    note: 'My role was to revamp their existing website with a minimal effort while working as their IT Support Executive. So I chose WordPress to build it with the help of plugins.',
-    video: '../assets/videos/tpl.mp4'
-  },
-  {
-    id: 3,
     name: 'jvillas-official.com',
     description: 'James Villas is a full-time singer/songwriter/instrumentalist & audio engineer, he needed a simple website to showcase his work. He did make sure that the website should look more modern with the animations.',
     url: null,
@@ -41,6 +31,16 @@ const works = [
     tags:  ['#html, #css, #javascript'],
     note: 'Villas already had the idea of the web design (a sketch) all he needed is someone who can develop the website. (through fiverr)',
     video: '../assets/videos/James_Villas.mp4'
+  },
+  {
+    id: 3,
+    name: 'tpl.lk',
+    description: 'Trade Promoters Limited (TPL) is Sri Lanka & Maldives\'s sole authorized distributor for Cummins Inc. (diesel generators & engines for marine, construction & industrial applications), & Sri Lanka\'s authorized distributor for Schindler (elevators & escalators).',
+    url: 'https://tpl.lk//',
+    repo: null,
+    tags:  ['#php, #wordpress_cms'],
+    note: 'My role was to revamp their existing website with a minimal effort while working as their IT Support Executive. So I chose WordPress to build it with the help of plugins.',
+    video: '../assets/videos/tpl.mp4'
   },
   {
     id: 4,

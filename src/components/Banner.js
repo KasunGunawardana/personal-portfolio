@@ -18,7 +18,7 @@ const Banner = () => {
                   </div>
                 </h2>
                 <div className="btn-row">
-                  <a href="/">Download CV <DownArrow /></a>
+                  <a href="/resume-kasun_gunawardana.pdf" target="_blank">Download CV <DownArrow /></a>
                 </div>
                 <div className="profile">
                   
