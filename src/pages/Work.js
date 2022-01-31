@@ -113,10 +113,10 @@ const Work = () => {
                             { work.repo != null && <a className="work-link icons" title="To GitHub repo" href={work.repo} target='_blank'><i class="fab fa-github"></i></a> }
                             { work.url != null && <a className="work-link icons" title="Visit the website" href={work.url} target='_blank'><i class="fas fa-external-link-alt"></i></a> }
                           </div>
-                        </div>
-                        <div className="loader3">
-                          <span></span>
-                          <span></span>
+                          <div className="loader3">
+                            <span></span>
+                            <span></span>
+                          </div>
                         </div>
                         <span className="tab-pane-item__hash">{work.tags}</span>
                         <hr />
