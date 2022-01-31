@@ -9,7 +9,9 @@ html {
   background: #ffffff;
   overscroll-behavior: none;
   margin: 0;
-  font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Poppins", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+ "Poppins", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+ "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -32,6 +34,12 @@ hr {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  .white-space-xl {
+    display: none;
   }
 }
 
@@ -236,10 +244,16 @@ hr {
 
 .page .row p {
   font-size: 1rem;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   font-weight: 500;
   z-index: 10;
   color: #000000;
+}
+
+@media (min-width: 1366px) {
+  .page .row p.about {
+    padding: 0 10%;
+  }
 }
 
 .page .row p a {
@@ -1300,6 +1314,7 @@ nav .nav-columns .nav-column .nav-info .nav-info-label {
 .work-wrapper .process-item .process-item__content .process-item__desc {
   font-size: 15px;
   margin-bottom: 0;
+  line-height: 1.2rem;
 }
 
 .work-wrapper .process-item .process-item__content:last-of-type .process-item__content {
