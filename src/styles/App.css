@@ -1236,7 +1236,7 @@ nav .nav-columns .nav-column .nav-info .nav-info-label {
 }
 
 .work-wrapper .process-item .process-item__content::before {
-  content: "\f55f";
+  content: "\f0ae";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;

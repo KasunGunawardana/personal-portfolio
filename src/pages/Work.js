@@ -19,7 +19,7 @@ const works = [
     url: 'https://www.intech.edu.lk/',
     repo: 'https://github.com/KasunGunawardana/intech-backend',
     tags:  ['#laravel'],
-    note: 'My role was to create the frontend of the website & the backend dashboard (fully customized CMS) which they can use to change the content of the website.',
+    note: 'My role was to create the frontend of the website (they already had the design) & the backend dashboard (fully customized CMS) which they can use to change the content of the website. Every content you see on the website is editable.',
     video: '../assets/videos/Intech.mp4'
   },
   {
@@ -49,7 +49,7 @@ const works = [
     url: null,
     repo: 'https://github.com/KasunGunawardana/liberty-in-learning.org',
     tags:  ['#html, #css, #javascript'],
-    note: 'The project owner (debbie v&ereem) had previously contacted me to create the association\'s logo (through fiverr). She already had a very basic website with the intention to just store information. She needed to make it nicer & more professional.',
+    note: 'The project owner (debbie vandereem) had previously contacted me to create the association\'s logo (through fiverr). She already had a very basic website with the intention to just store information. She needed to make it nicer & more professional.',
     video: '../assets/videos/Liberty_in_Learning.mp4'
   }
 ]
@@ -91,7 +91,7 @@ const Work = () => {
           transition={{ duration: 1 }}
           >
             <h1>Solo Projects</h1>
-            <p>Some <strong>Things</strong> I’ve Built</p>
+            <p>Some <strong>Things</strong> I’ve Built...</p>
 
             {/* <WorkContainer style={{ }}>
               <WorkList>
