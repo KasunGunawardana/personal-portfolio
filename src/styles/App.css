@@ -35,6 +35,12 @@ hr {
   }
 }
 
+@media (max-width: 1400px) {
+  .white-space-xl {
+    display: none;
+  }
+}
+
 #root {
   position: relative;
 }
@@ -236,10 +242,16 @@ hr {
 
 .page .row p {
   font-size: 1rem;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   font-weight: 500;
   z-index: 10;
   color: #000000;
+}
+
+@media (min-width: 1366px) {
+  .page .row p.about {
+    padding: 0 10%;
+  }
 }
 
 .page .row p a {
@@ -1300,6 +1312,7 @@ nav .nav-columns .nav-column .nav-info .nav-info-label {
 .work-wrapper .process-item .process-item__content .process-item__desc {
   font-size: 15px;
   margin-bottom: 0;
+  line-height: 1.2rem;
 }
 
 .work-wrapper .process-item .process-item__content:last-of-type .process-item__content {

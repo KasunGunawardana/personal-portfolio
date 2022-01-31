@@ -37,6 +37,12 @@ hr {
   }
 }
 
+.white-space-xl {
+  @include media("<=1400px") {
+    display: none;
+  }
+}
+
 #root {
   position: relative;
 }
@@ -176,11 +182,16 @@ hr {
     }
     p {
       font-size: 1rem;
-      line-height: 1.2rem;
+      line-height: 1.4rem;
       font-weight: 500;
       z-index: 10;
       color: $black;
       // mix-blend-mode: difference;
+      &.about {
+        @include media(">=desktop") {
+          padding: 0 10%;
+        }
+      }
       a {
         color: $white;
         text-decoration: none;
@@ -1038,6 +1049,7 @@ nav {
       .process-item__desc {
         font-size: 15px;
         margin-bottom: 0;
+        line-height: 1.2rem;
       }
       &:last-of-type {
         .process-item__content {
