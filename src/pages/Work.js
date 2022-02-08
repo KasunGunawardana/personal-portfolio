@@ -49,7 +49,7 @@ const works = [
     url: null,
     repo: 'https://github.com/KasunGunawardana/liberty-in-learning.org',
     tags:  ['#html, #css, #javascript'],
-    note: 'The project owner (debbie vandereem) had previously contacted me to create the association\'s logo (through fiverr). She already had a very basic website with the intention to just store information. She needed to make it nicer & more professional.',
+    note: 'The project owner (debbie vandereem) had previously contacted me to create the association\'s logo (through fiverr). She already had a very basic website with the intention to just store information. She needed to make it nicer & more professional. (Sorry about the laggy content)',
     video: '../assets/videos/Liberty_in_Learning.mp4'
   }
 ]
