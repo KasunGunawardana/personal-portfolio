@@ -189,7 +189,7 @@ hr {
       // mix-blend-mode: difference;
       &.about {
         @include media(">=desktop") {
-          padding: 0 10%;
+          padding: 0 8%;
         }
       }
       a {
