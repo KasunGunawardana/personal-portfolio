@@ -41,7 +41,7 @@ const Banner = () => {
                       <ul>
                         <li><a className="icons" href="https://www.linkedin.com/in/kasun-gunawardana/" target='_blank'><i class="fab fa-linkedin"></i></a></li>
                         <li><a className="icons" href="https://twitter.com/KasunGunawarda8" target='_blank'><i class="fab fa-twitter-square"></i></a></li>
-                        <li><a className="icons" href="https://github.com/KasunGunawardana" target='_blank'><i class="fab fa-github"></i></a></li>
+                        {/* <li><a className="icons" href="https://github.com/KasunGunawardana" target='_blank'><i class="fab fa-github"></i></a></li> */}
                       </ul>
                     </div>
                   </div>
