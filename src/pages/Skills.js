@@ -22,7 +22,7 @@ const Skills = () => {
                 <SkillProgressBar skill="CSS/Sass/Less" level={9} />
               </div>
               <div className="customized-column col-lg-4 col-sm-6 col-xs-12">
-                <SkillProgressBar skill="Javascript (ES6)" level={8} />
+                <SkillProgressBar skill="Javascript (ES6)" level={9} />
               </div>
               <div className="customized-column col-lg-4 col-sm-6 col-xs-12">
                 <SkillProgressBar skill="PHP/Laravel/Zend" level={9} />
