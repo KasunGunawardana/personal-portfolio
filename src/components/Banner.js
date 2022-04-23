@@ -14,7 +14,7 @@ const Banner = () => {
                     <span>Kasun Gunawardana.</span>
                   </div>
                   <div className="line sub">
-                    <span>I'm an experienced FrontEnd Developer with Backend development capabilities.</span>
+                    <span>I'm a Senior Web Developer with a bit of UI/UX Design experience.</span>
                   </div>
                 </h2>
                 <div className="btn-row">
